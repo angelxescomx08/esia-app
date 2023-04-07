@@ -91,20 +91,19 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
 
-            android:text="Coordinador del Programa de Maestría en Ciencias en Arquitectura y Urbanismo"
             android:background="@color/colorPrimary"
-            android:textColor="@color/white"
             android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="15sp"
             android:padding="8dp"
+            android:text="Coord. de Maestría en Ciencias en Arquitectura y Urbanismo"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
 
-            app:layout_constraintTop_toBottomOf="@+id/labelTitulo1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelTitulo1"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/labelTituloNegritas1"
@@ -135,27 +134,25 @@
             />
 
 
-
         <TextView
             android:id="@+id/labelServiciosEstudiantiles"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
 
-            android:text="Coordinador del Programa de Maestría en Conservación y Restauración Arquitectónica"
-            android:background="@color/colorPrimary"
-            android:textColor="@color/white"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="15sp"
-            android:padding="8dp"
             android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Coord.  De la  Maestría en Conservación y Restauración Arquitectónica"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
 
-            app:layout_constraintTop_toBottomOf="@+id/labelInfoFormacionBasica"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelInfoFormacionBasica"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/labelTituloNegritas2"
@@ -186,42 +183,39 @@
             />
 
 
-
         <TextView
             android:id="@+id/labelServiciosEstudiantilesCosaDos"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
 
-            android:text="Coordinador del Programa de Especialidad en Valuación Inmobiliaria"
-            android:background="@color/colorPrimary"
-            android:textColor="@color/white"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="15sp"
-            android:padding="8dp"
             android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Coord. de la Especialidad en Valuación inmobiliaria"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
 
-            app:layout_constraintTop_toBottomOf="@+id/labelInfoServiciosEstudiantiles"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelInfoServiciosEstudiantiles"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/labelTituloNegritas2CosaDos"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
 
-            android:text="Mtro. Ismael Ramírez Jaimes"
             android:padding="10dp"
-            android:textStyle="bold|italic"
+            android:text="M. Ismael Ramírez Jaimes"
             android:textColor="@color/black"
+            android:textStyle="bold|italic"
 
-            app:layout_constraintTop_toBottomOf="@+id/labelServiciosEstudiantilesCosaDos"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelServiciosEstudiantilesCosaDos" />
 
         <TextView
             android:id="@+id/labelInfoServiciosEstudiantilesCosaDos"
@@ -237,28 +231,25 @@
             />
 
 
-
-
         <TextView
             android:id="@+id/labelFormacionIntegralInstitucional"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
 
-            android:text="Coordinador del Programa de Especialidad en Restauración Arquitectónica"
-            android:background="@color/colorPrimary"
-            android:textColor="@color/white"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="15sp"
-            android:padding="8dp"
             android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Coord. de la Especialidad en Restauración Arquitectónica"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
 
-            app:layout_constraintTop_toBottomOf="@+id/labelInfoServiciosEstudiantilesCosaDos"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelInfoServiciosEstudiantilesCosaDos"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/labelTituloNegritas3"

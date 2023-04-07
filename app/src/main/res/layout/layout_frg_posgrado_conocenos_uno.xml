@@ -91,35 +91,33 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
 
-            android:text="Jefe de la Sección de Estudios de Posgrado e Investigación"
             android:background="@color/colorPrimary"
-            android:textColor="@color/white"
             android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="15sp"
             android:padding="8dp"
+            android:text="Jefe de la Sección de Estudios de Posgrado e Investigación "
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
 
-            app:layout_constraintTop_toBottomOf="@+id/labelTitulo1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelTitulo1"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/labelTituloNegritas1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
 
-            android:text="M. en R. Ricardo Lozano Galvez"
             android:padding="10dp"
-            android:textStyle="bold|italic"
+            android:text="M. en R. Ricardo Lozano Gálvez"
             android:textColor="@color/black"
+            android:textStyle="bold|italic"
 
-            app:layout_constraintTop_toBottomOf="@+id/labelFormacionBasica"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelFormacionBasica" />
 
         <TextView
             android:id="@+id/labelInfoFormacionBasica"
@@ -135,42 +133,39 @@
             />
 
 
-
         <TextView
             android:id="@+id/labelServiciosEstudiantiles"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
 
-            android:text="Jefa del Departamento de Investigación"
-            android:background="@color/colorPrimary"
-            android:textColor="@color/white"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="15sp"
-            android:padding="8dp"
             android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Departamento de Investigación"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
 
-            app:layout_constraintTop_toBottomOf="@+id/labelInfoFormacionBasica"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelInfoFormacionBasica"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/labelTituloNegritas2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
 
-            android:text="Dr. Luz Olivia Dominguez Prieto"
             android:padding="10dp"
-            android:textStyle="bold|italic"
+            android:text="Dra. Luz Olivia Prieto Domínguez"
             android:textColor="@color/black"
+            android:textStyle="bold|italic"
 
-            app:layout_constraintTop_toBottomOf="@+id/labelServiciosEstudiantiles"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelServiciosEstudiantiles" />
 
         <TextView
             android:id="@+id/labelInfoServiciosEstudiantiles"
@@ -186,42 +181,39 @@
             />
 
 
-
         <TextView
             android:id="@+id/labelServiciosEstudiantilesCosaDos"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
 
-            android:text="Jefe del Departamento de Posgrado"
-            android:background="@color/colorPrimary"
-            android:textColor="@color/white"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="15sp"
-            android:padding="8dp"
             android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Departamento de posgrado"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
 
-            app:layout_constraintTop_toBottomOf="@+id/labelInfoServiciosEstudiantiles"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelInfoServiciosEstudiantiles"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/labelTituloNegritas2CosaDos"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
 
-            android:text="Ing. Arq. Mario Álvarez Victoria"
             android:padding="10dp"
-            android:textStyle="bold|italic"
+            android:text="Ing. Arg. Mario Álvarez Victoria"
             android:textColor="@color/black"
+            android:textStyle="bold|italic"
 
-            app:layout_constraintTop_toBottomOf="@+id/labelServiciosEstudiantilesCosaDos"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelServiciosEstudiantilesCosaDos" />
 
         <TextView
             android:id="@+id/labelInfoServiciosEstudiantilesCosaDos"
@@ -237,28 +229,25 @@
             />
 
 
-
-
         <TextView
             android:id="@+id/labelFormacionIntegralInstitucional"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
 
-            android:text="Coordinador del Programa de Doctorado en Ciencias en Arquitectura y Urbanismo"
-            android:background="@color/colorPrimary"
-            android:textColor="@color/white"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="15sp"
-            android:padding="8dp"
             android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Coord. del Doctorado en Ciencias en Arquitectura y Urbanismo"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
 
-            app:layout_constraintTop_toBottomOf="@+id/labelInfoServiciosEstudiantilesCosaDos"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelInfoServiciosEstudiantilesCosaDos"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/labelTituloNegritas3"
