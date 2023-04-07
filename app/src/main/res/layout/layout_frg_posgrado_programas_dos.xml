@@ -91,20 +91,19 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
 
-            android:text="Maestría en Conservación y\nRestauración Arquitectónica"
             android:background="@color/colorPrimary"
-            android:textColor="@color/white"
             android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="15sp"
             android:padding="8dp"
+            android:text="Maestría en Conservación y Restauración Arquitectónica  "
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
 
-            app:layout_constraintTop_toBottomOf="@+id/labelTitulo1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelTitulo1"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/txtVerMasEscolaridad"
@@ -171,20 +170,19 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
 
-            android:text="Especialidad en Valuación Inmobiliaria"
             android:background="@color/colorPrimary"
-            android:textColor="@color/white"
             android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="15sp"
             android:padding="8dp"
+            android:text="Especialidad en Valuacion Inmobiliaria    "
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
 
-            app:layout_constraintTop_toBottomOf="@+id/txtVerMasCurricular"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtVerMasCurricular"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/txtVerMasCreditoPosgrado"

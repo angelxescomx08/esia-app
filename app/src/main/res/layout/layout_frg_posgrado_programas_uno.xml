@@ -111,7 +111,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
 
-            android:text="LGAC 1. Conservación del patrimonio urbano arquitectónico\nLGAC 2. Viviendas seguras y sustentables\nLGAC 3. Ambientación positiva de edificios\nLGAC 4. Arquitectura y diseño\nLGAC 5. Cultura y ciudad\nLGAC 6. Espacio público y patrimonial\nLGAC 7. Ordenamiento territorial y urbano\nLGAC 8. Geomática y procesos urbanos"
+            android:text="LGAC 1. Conservación del patrimonio urbano arquitectónico\nLGAC 2. Viviendas seguras y sustentables\nLGAC 3. Ambientación pasiva de edificios\nLGAC 4. Arquitectura y diseño\nLGAC 5. Cultura y ciudad\nLGAC 6. Espacio público patrimonial\nLGAC 7. Ordenamiento territorial y urbano\nLGAC 8. Geomática y procesos urbanos"
             android:padding="10dp"
 
             app:layout_constraintTop_toBottomOf="@+id/labelFormacionBasica"
