@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:background="@color/colorFondo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--ImageView
+            android:id="@+id/imgEsia"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+
+            android:src="@drawable/esia"
+            android:contentDescription="@null"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.03"
+            app:layout_constraintHorizontal_bias="0.95"
+            />
+
+        <TextView
+            android:id="@+id/labelEsucela"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:gravity="bottom|end"
+            android:text="Escuela Superior de Ingeniería y Arquitectura"
+            android:textColor="@color/colorText"
+            android:textSize="13sp"
+
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toTopOf="@+id/labelUnidad"
+            app:layout_constraintEnd_toStartOf="@+id/imgEsia"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imgEsia" />
+
+        <TextView
+            android:id="@+id/labelUnidad"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:text="Unidad Tecamachalco"
+            android:gravity="top|end"
+            android:textStyle="bold"
+            android:textColor="@color/colorText"
+            android:textSize="13sp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelEsucela"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/labelEsucela"
+            app:layout_constraintBottom_toBottomOf="@+id/imgEsia"
+            /-->
+
+        <TextView
+            android:id="@+id/labelTitulo1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:textColor="@color/black"
+            android:text="Servicio Social"
+            android:gravity="center"
+            android:padding="12dp"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.03"
+            />
+
+        <TextView
+            android:id="@+id/labelTitulo2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Responsables"
+            android:gravity="center"
+            android:padding="12dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelTitulo1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+
+        <TextView
+            android:id="@+id/labelTitulo3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="Departamento responsable"
+            android:gravity="center"
+            android:padding="12dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelTitulo2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.01"
+            />
+
+        <TextView
+            android:id="@+id/labelTitulo4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:text="Jefe del departamento: M. en E. Jesús Carlos Hernández Cruz\nContacto: 57-29-60-00 Ext. 68045\nDías de atención: Lunes a Viernes\nHorario de atención: 11:00 a 14:30 hrs"
+            android:gravity="start"
+            android:paddingHorizontal="12dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelTitulo3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+
+        <TextView
+            android:id="@+id/labelTitulo5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="Inicios de servicio"
+            android:gravity="center"
+            android:padding="12dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelTitulo4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.01"
+            />
+
+        <TextView
+            android:id="@+id/labelTitulo6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:text="Encargada: Marcela Nava\nContacto: manava@ipn.mx\nHorario de atención: 9:00 a 14:00 hrs"
+            android:gravity="start"
+            android:paddingHorizontal="12dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelTitulo5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+
+        <TextView
+            android:id="@+id/labelTitulo7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="Términos de servicio"
+            android:gravity="center"
+            android:padding="12dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelTitulo6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.01"
+            />
+
+        <TextView
+            android:id="@+id/labelTitulo8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:text="Encargada: Maricruz Hernández\nContacto: marihernandez@ipn.mx\nHorario de atención: modalidad a distancia"
+            android:gravity="start"
+            android:paddingHorizontal="12dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelTitulo7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="@color/colorPrimary"
+            android:src="@drawable/ic_arrow_back"
+            android:rotation="180"
+            android:contentDescription="@null"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.98"
+            app:layout_constraintHorizontal_bias="0.97"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

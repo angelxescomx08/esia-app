@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:background="@color/colorFondo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--TextView
+            android:id="@+id/labelEsucela"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Escuela Superior de Ingeniería y Arquitectura"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorText"
+            android:textSize="17sp"
+
+            android:layout_marginTop="20dp"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/labelUnidad"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Unidad Tecamachalco"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorText"
+            android:textSize="20sp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelEsucela"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/imgEsia"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+
+            android:src="@drawable/esia"
+            android:contentDescription="@null"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelUnidad"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.03"
+            /-->
+
+        <TextView
+            android:id="@+id/labelTitulo"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Red de Género\nESIA Emergencia"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorText"
+            android:textSize="22sp"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.03"
+            />
+
+        <ImageView
+            android:id="@+id/imgEquality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/equality"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@null"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelTitulo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/labelResponsable"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Responsable: Ing. Arq. Tonatiuh Santiago Pablo\n\nCorreo: santiago@ipn.mx"
+            android:textColor="@color/colorText"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:paddingHorizontal="30dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/imgEquality"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imgEmailResponsable"
+            />
+
+        <ImageView
+            android:id="@+id/imgEmailResponsable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_email"
+            android:padding="15dp"
+            android:contentDescription="@null"
+            style="@style/ClickableView"
+            android:visibility="gone"
+            tools:visibility="gone"
+            app:layout_constraintTop_toTopOf="@+id/labelResponsable"
+            app:layout_constraintBottom_toBottomOf="@+id/labelResponsable"
+            app:layout_constraintStart_toEndOf="@+id/labelResponsable"
+            app:layout_constraintEnd_toStartOf="@+id/imgCopyResponsable"
+            />
+
+        <ImageView
+            android:id="@+id/imgCopyResponsable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_copy"
+            android:padding="15dp"
+            android:contentDescription="@null"
+            style="@style/ClickableView"
+            android:visibility="gone"
+            tools:visibility="gone"
+            app:layout_constraintTop_toTopOf="@+id/labelResponsable"
+            app:layout_constraintBottom_toBottomOf="@+id/labelResponsable"
+            app:layout_constraintStart_toEndOf="@+id/imgEmailResponsable"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/labelDenuncia"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Denuncia en caso de sufrir violencia de género, hostigamiento o acoso sexual dentro del instituto."
+            android:gravity="center"
+            android:textColor="@color/colorText"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:paddingHorizontal="20dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelResponsable"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/labelEmergencia"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Emergencias Naucalpan\n53-71-22-50"
+            android:textColor="@color/colorText"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="22sp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelDenuncia"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imgSos"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.1"
+            />
+
+        <ImageView
+            android:id="@+id/imgSos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sos"
+            android:contentDescription="@null"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toTopOf="@+id/labelEmergencia"
+            app:layout_constraintStart_toEndOf="@+id/labelEmergencia"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/imgPhoneEmergencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_local_phone"
+            android:padding="15dp"
+            android:contentDescription="@null"
+            style="@style/ClickableView"
+            android:visibility="gone"
+            tools:visibility="gone"
+            app:layout_constraintTop_toTopOf="@+id/labelEmergencia"
+            app:layout_constraintBottom_toBottomOf="@+id/labelEmergencia"
+            app:layout_constraintStart_toEndOf="@+id/labelEmergencia"
+            app:layout_constraintEnd_toStartOf="@+id/imgCopyEmergencia"
+            />
+
+        <ImageView
+            android:id="@+id/imgCopyEmergencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_copy"
+            android:padding="15dp"
+            android:contentDescription="@null"
+            style="@style/ClickableView"
+            android:visibility="gone"
+            tools:visibility="gone"
+            app:layout_constraintTop_toTopOf="@+id/labelEmergencia"
+            app:layout_constraintBottom_toBottomOf="@+id/labelEmergencia"
+            app:layout_constraintStart_toEndOf="@+id/imgPhoneEmergencia"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/labelBomberos"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Bomberos: 52-94-24-16 / 53-73-11-22"
+            android:textColor="@color/colorText"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:padding="5dp"
+
+
+            app:layout_constraintTop_toBottomOf="@+id/labelEmergencia"
+            app:layout_constraintStart_toStartOf="@+id/labelEmergencia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintVertical_bias="0.1"
+
+            />
+
+        <ImageView
+            android:id="@+id/imgPhoneBomberos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_local_phone"
+            android:padding="15dp"
+            android:contentDescription="@null"
+            android:visibility="gone"
+            tools:visibility="gone"
+            style="@style/ClickableView"
+            app:layout_constraintTop_toTopOf="@+id/labelBomberos"
+            app:layout_constraintBottom_toBottomOf="@+id/labelBomberos"
+            app:layout_constraintStart_toStartOf="@+id/imgPhoneEmergencia"
+            />
+
+        <ImageView
+            android:id="@+id/imgCopyBomberos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_copy"
+            android:padding="15dp"
+            android:contentDescription="@null"
+            android:visibility="gone"
+            tools:visibility="gone"
+            style="@style/ClickableView"
+            app:layout_constraintTop_toTopOf="@+id/labelBomberos"
+            app:layout_constraintBottom_toBottomOf="@+id/labelBomberos"
+            app:layout_constraintStart_toEndOf="@+id/imgPhoneBomberos"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/labelCruzRoja"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Cruz Roja: 55-60-48-59"
+            android:textColor="@color/colorText"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelBomberos"
+            app:layout_constraintStart_toStartOf="@+id/labelBomberos"
+
+
+            />
+
+        <ImageView
+            android:id="@+id/imgPhoneCruzRoja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_local_phone"
+            android:padding="15dp"
+            android:contentDescription="@null"
+            android:visibility="gone"
+            tools:visibility="gone"
+            style="@style/ClickableView"
+            app:layout_constraintTop_toTopOf="@+id/labelCruzRoja"
+            app:layout_constraintBottom_toBottomOf="@+id/labelCruzRoja"
+            app:layout_constraintStart_toStartOf="@+id/imgPhoneEmergencia"
+            />
+
+        <ImageView
+            android:id="@+id/imgCopyCruzRoja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_copy"
+            android:padding="15dp"
+            android:contentDescription="@null"
+            android:visibility="gone"
+            tools:visibility="gone"
+            style="@style/ClickableView"
+            app:layout_constraintTop_toTopOf="@+id/labelCruzRoja"
+            app:layout_constraintBottom_toBottomOf="@+id/labelCruzRoja"
+            app:layout_constraintStart_toEndOf="@+id/imgPhoneCruzRoja"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/labelProteccionCivil"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Protección Civil:55-60-72-21"
+            android:textColor="@color/colorText"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelCruzRoja"
+            app:layout_constraintStart_toStartOf="@+id/labelBomberos"
+            />
+
+        <ImageView
+            android:id="@+id/imgPhoneProteccionCivil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_local_phone"
+            android:padding="15dp"
+            android:contentDescription="@null"
+            android:visibility="gone"
+            tools:visibility="gone"
+            style="@style/ClickableView"
+            app:layout_constraintTop_toTopOf="@+id/labelProteccionCivil"
+            app:layout_constraintBottom_toBottomOf="@+id/labelProteccionCivil"
+            app:layout_constraintStart_toStartOf="@+id/imgPhoneEmergencia"
+            />
+
+        <ImageView
+            android:id="@+id/imgCopyProteccionCivil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_copy"
+            android:padding="15dp"
+            android:contentDescription="@null"
+            android:visibility="gone"
+            tools:visibility="gone"
+            style="@style/ClickableView"
+            app:layout_constraintTop_toTopOf="@+id/labelProteccionCivil"
+            app:layout_constraintBottom_toBottomOf="@+id/labelProteccionCivil"
+            app:layout_constraintStart_toEndOf="@+id/imgPhoneProteccionCivil"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <Space
+            app:layout_constraintTop_toBottomOf="@+id/labelProteccionCivil"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

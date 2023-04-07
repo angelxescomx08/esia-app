@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:background="@color/colorFondo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--TextView
+            android:id="@+id/labelEsucela"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Escuela Superior de Ingeniería y Arquitectura"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorText"
+            android:textSize="17sp"
+
+            android:layout_marginTop="20dp"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/labelUnidad"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Unidad Tecamachalco"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorText"
+            android:textSize="20sp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelEsucela"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/imgEsia"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+
+            android:src="@drawable/esia"
+            android:contentDescription="@null"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelUnidad"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.03"
+            /-->
+
+        <ImageView
+            android:id="@+id/imgMaps"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:src="@drawable/maps"
+            android:contentDescription="@null"
+
+            app:layout_constraintTop_toTopOf="@+id/labelDireccion"
+            app:layout_constraintBottom_toBottomOf="@+id/labelDireccion"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/labelDireccion"
+            />
+
+        <TextView
+            android:id="@+id/labelDireccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            tools:text="Av. Fuente de los Leones 28.\nLomas de Tecamachalco, 53950.\nNaucalpan de juarez, México."
+            android:gravity="center"
+            android:textSize="18sp"
+
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgMaps"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.05"
+            android:layout_marginEnd="20dp"
+            />
+
+        <TextView
+            android:id="@+id/labelTitulo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Rutas"
+            android:gravity="start"
+
+
+            app:layout_constraintTop_toBottomOf="@+id/labelDireccion"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.05"
+            app:layout_constraintHorizontal_bias="0.10"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="@+id/labelTitulo2"
+            app:layout_constraintBottom_toBottomOf="@+id/labelTitulo2"
+            app:layout_constraintStart_toEndOf="@+id/labelTitulo2"
+            android:src="@drawable/ic_double_arrow_right"
+            android:rotation="90"
+            android:contentDescription="@null"
+            />
+
+
+
+        <TextView
+            android:id="@+id/titulotacuba"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Tacuba"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:padding="8dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelTitulo2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.02"
+            />
+
+        <TextView
+            android:id="@+id/labelTacuba"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="● Necesitas ubicarte en la línea dos del metro “cuatro caminostasqueña”, línea azul.\n\n● Deberás tomar el metro en dirección “cuatro caminos” y bajar en la estación “Tacuba”.\n\n● En el paradero de “Tacuba” debes tomar el camión morado ruta 00 con dirección a ESIA Tecamachalco."
+            android:padding="10dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/titulotacuba"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/labelTacuba2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="● Nota. El camión te dejara en la entrada principal de la ESIA Tecamachalco."
+            android:padding="10dp"
+            android:textStyle="bold"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelTacuba"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/imgTacuba"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_double_arrow_right"
+            app:layout_constraintEnd_toEndOf="@+id/titulotacuba"
+            app:layout_constraintTop_toTopOf="@+id/titulotacuba"
+            app:layout_constraintBottom_toBottomOf="@+id/titulotacuba"
+            app:layout_constraintStart_toStartOf="@+id/titulotacuba"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:tint="@color/white"
+            android:rotation="270"
+            android:contentDescription="@null"
+            />
+
+
+        <TextView
+            android:id="@+id/tituloCuatroCaminos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Cuatro Caminos"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:padding="8dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelTacuba2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.02"
+            />
+
+        <TextView
+            android:id="@+id/labelCuatroCaminos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="● Necesitas ubicarte en la línea dos del metro “cuatro caminos-tasqueña”, línea azul.\n\n● Deberás tomar el metro en dirección “cuatro caminos” y bajar en la estación “Cuatro caminos”\n\n● El paradero de “Cuatro caminos” se encuentra dentro del centro comercial “Toreo Parque Central”, ahí debes tomar la combi, ruta 00 con dirección a ESIA Tecamachalco."
+            android:padding="10dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/tituloCuatroCaminos"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/labelCuatroCaminos2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="● Nota. La combi te dejara en la entrada principal de la ESIA Tecamachalco."
+            android:padding="10dp"
+            android:textStyle="bold"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelCuatroCaminos"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/imgCuatroCaminos"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_double_arrow_right"
+            app:layout_constraintEnd_toEndOf="@+id/tituloCuatroCaminos"
+            app:layout_constraintTop_toTopOf="@+id/tituloCuatroCaminos"
+            app:layout_constraintBottom_toBottomOf="@+id/tituloCuatroCaminos"
+            app:layout_constraintStart_toStartOf="@+id/tituloCuatroCaminos"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:tint="@color/white"
+            android:rotation="270"
+            android:contentDescription="@null"
+            />
+
+
+        <TextView
+            android:id="@+id/tituloChapultepec"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Chapultepec"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:padding="8dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelCuatroCaminos2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.02"
+            />
+
+        <TextView
+            android:id="@+id/labelChapultepec"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="● Necesitas ubicarte en la línea dos del metro “cuatro caminos-tasqueña”, línea azul.\n\n● Deberás tomar el metro en dirección “cuatro caminos” y bajar en la estación “Cuatro caminos”\n\n● El paradero de “Cuatro caminos” se encuentra dentro del centro comercial “Toreo Parque Central”, ahí debes tomar la combi, ruta 00 con dirección a ESIA Tecamachalco."
+            android:padding="10dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/tituloChapultepec"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/labelChapultepec2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="● Nota. La combi te dejara en la entrada principal de la ESIA Tecamachalco."
+            android:padding="10dp"
+            android:textStyle="bold"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelChapultepec"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/imgChapultepec"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_double_arrow_right"
+            app:layout_constraintEnd_toEndOf="@+id/tituloChapultepec"
+            app:layout_constraintTop_toTopOf="@+id/tituloChapultepec"
+            app:layout_constraintBottom_toBottomOf="@+id/tituloChapultepec"
+            app:layout_constraintStart_toStartOf="@+id/tituloChapultepec"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:tint="@color/white"
+            android:rotation="270"
+            android:contentDescription="@null"
+            />
+
+        <!--ImageView
+            android:id="@+id/imgCopy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_copy"
+            android:padding="15dp"
+            android:contentDescription="@null"
+            app:layout_constraintTop_toTopOf="@+id/labelDireccion"
+            app:layout_constraintBottom_toBottomOf="@+id/labelDireccion"
+            app:layout_constraintStart_toEndOf="@+id/labelDireccion"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <Button
+            android:id="@+id/btnMaps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            tools:text="Ir a google maps"
+            android:padding="15dp"
+            android:background="@drawable/shape_corners"
+            android:textColor="@color/white"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelDireccion"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.67"
+            /-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

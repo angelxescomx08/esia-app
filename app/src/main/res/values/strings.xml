@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ESIA TECAMACHALCO</string>
+    <string name="app_version">v1.0.0</string>
+
+    <string name="title_home">Inicio</string>
+    <string name="title_dashboard">Directorio</string>
+    <string name="title_notifications">Escuela</string>
+    <string name="nombre">Nombre</string>
+    <string name="correo">Correo</string>
+    <string name="cargo">Cargo</string>
+    <string name="ext">Extensión</string>
+    <string name="no_hay_informaci_n_para_mostrar">No hay información para mostrar.</string>
+    <string name="buscar">Buscar…</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="version">Versión</string>
+    <string name="pdfView_appName">Visualizar PDF</string>
+    <string name="example">● Descripcion numero 1 \n● Descripcion numero 2\n● Descripcion numero 3\n● Descripcion numero 4</string>
+    <string name="becas1">Desde el primer semestre de tu estancia en el Instituto Politécnico Nacional, podrás ser beneficiario de alguno de los distintos programas de becas que se ofrecen en el Instituto.</string>
+    <string name="becas2">Jefe del departamento: M. en E. Jesús Carlos Hernández Cruz\nContacto: 57-29-60-00 Ext. 68045\nDías de atención: Lunes a Jueves\nHorario de atención: 11:00 a 14:30 hrs</string>
+</resources>

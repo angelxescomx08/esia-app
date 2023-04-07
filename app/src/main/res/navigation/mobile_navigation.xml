@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_sesion"
+    >
+
+    <fragment
+        android:id="@+id/navigation_sesion"
+        android:name="com.ipn.esiatecamachalco.ui.sesion.FrgSesion"
+        android:label="Iniciar sesión"
+        tools:layout="@layout/layout_frg_sesion"
+        >
+        <action
+            android:id="@+id/action_navigation_sesion_to_frgUserType"
+            app:destination="@id/frgUserType"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim"
+            />
+        <action
+            android:id="@+id/actionToRegistro"
+            app:destination="@id/frgRegistro"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_menu"
+        android:name="com.ipn.esiatecamachalco.ui.menu.FrgMenu"
+        android:label="Menú"
+        tools:layout="@layout/layout_frg_menu" >
+
+        <action
+            android:id="@+id/action_becas"
+            app:destination="@id/navigation_becas"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"
+            />
+        <action
+            android:id="@+id/action_tramites"
+            app:destination="@id/navigation_tramites_uno"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"
+            />
+        <action
+            android:id="@+id/action_servicio_social_uno"
+            app:destination="@id/navigation_servicio_social_uno"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"
+            />
+        <action
+            android:id="@+id/action_navigation_menu_to_frgPracticasUno"
+            app:destination="@id/frgPracticasUno"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"
+            />
+        <action
+            android:id="@+id/action_navigation_menu_to_frgTitulacionUno"
+            app:destination="@id/frgTitulacionUno"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"
+            />
+        <action
+            android:id="@+id/action_navigation_menu_to_frgApoyoEstudiantilUno"
+            app:destination="@id/frgApoyoEstudiantilUno"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"
+            />
+
+        <action
+            android:id="@+id/actionMenuPosgradoMenu"
+            app:destination="@id/frgPosgradoMenu"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim"
+            />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_servicio_social_uno"
+        android:name="com.ipn.esiatecamachalco.ui.menu.FrgServicioSocialUno"
+        android:label="Becas"
+        tools:layout="@layout/layout_frg_servicio_social_uno" >
+        <action
+            android:id="@+id/action_servicio_social_dos"
+            app:destination="@id/navigation_servicio_social_dos"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_servicio_social_dos"
+        android:name="com.ipn.esiatecamachalco.ui.menu.FrgServicioSocialDos"
+        android:label="Becas"
+        tools:layout="@layout/layout_frg_servicio_social_dos" >
+        <action
+            android:id="@+id/action_social_tres"
+            app:destination="@id/navigation_servicio_social_tres"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_servicio_social_tres"
+        android:name="com.ipn.esiatecamachalco.ui.menu.FrgServicioSocialTres"
+        android:label="Becas"
+        tools:layout="@layout/layout_frg_servicio_social_tres" />
+
+    <fragment
+        android:id="@+id/navigation_tramites_uno"
+        android:name="com.ipn.esiatecamachalco.ui.menu.FrgTramitesEscolaresUno"
+        android:label="Tramites uno"
+        tools:layout="@layout/layout_frg_tramites_escolares_uno" >
+        <action
+            android:id="@+id/action_tramites_dos"
+            app:destination="@id/navigation_tramites_dos"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_tramites_dos"
+        android:name="com.ipn.esiatecamachalco.ui.menu.FrgTramitesEscolaresDos"
+        android:label="Tramites dos"
+        tools:layout="@layout/layout_frg_tramites_escolares_dos" >
+        <action
+            android:id="@+id/action_tramites_tres"
+            app:destination="@id/navigation_tramites_tres"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_tramites_tres"
+        android:name="com.ipn.esiatecamachalco.ui.menu.FrgTramitesEscolaresTres"
+        android:label="Tramites tres"
+        tools:layout="@layout/layout_frg_tramites_escolares_tres" />
+
+    <fragment
+        android:id="@+id/navigation_becas"
+        android:name="com.ipn.esiatecamachalco.ui.menu.FrgBecas"
+        android:label="Becas"
+        tools:layout="@layout/layout_frg_becas" />
+
+    <fragment
+        android:id="@+id/navigation_location"
+        android:name="com.ipn.esiatecamachalco.ui.ubicacion.FrgUbicacion"
+        android:label="Ubicación"
+        tools:layout="@layout/layout_frg_ubicacion" />
+
+    <fragment
+        android:id="@+id/navigation_directory"
+        android:name="com.ipn.esiatecamachalco.ui.directorio.FrgDirectorio"
+        android:label="Directorio"
+        tools:layout="@layout/layout_frg_directorio" />
+
+    <fragment
+        android:id="@+id/navigation_help"
+        android:name="com.ipn.esiatecamachalco.ui.ayuda.FrgAyuda"
+        android:label="Ayuda"
+        tools:layout="@layout/layout_frg_ayuda" />
+
+    <fragment
+        android:id="@+id/navigation_format"
+        android:name="com.ipn.esiatecamachalco.ui.formatos.FrgFormatos"
+        android:label="Formatos"
+        tools:layout="@layout/layout_frg_formatos" />
+
+    <action
+        android:id="@+id/action_sesion"
+        app:destination="@id/navigation_sesion"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:launchSingleTop="true"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@animator/nav_default_pop_exit_anim"
+        app:popUpTo="@id/mobile_navigation"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_format"
+        app:destination="@id/navigation_format"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@animator/nav_default_pop_exit_anim"
+        app:popUpToInclusive="true"
+        app:launchSingleTop="true"
+        />
+
+    <action
+        android:id="@+id/action_help"
+        app:destination="@id/navigation_help"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@animator/nav_default_pop_exit_anim"
+        app:popUpToInclusive="true"
+        app:launchSingleTop="true"
+        />
+
+    <action
+        android:id="@+id/action_directory"
+        app:destination="@id/navigation_directory"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@animator/nav_default_pop_exit_anim"
+        app:popUpToInclusive="true"
+        app:launchSingleTop="true"
+        />
+
+    <action
+        android:id="@+id/action_location"
+        app:destination="@id/navigation_location"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@animator/nav_default_pop_exit_anim"
+        app:popUpToInclusive="true"
+        app:launchSingleTop="true"
+        />
+
+    <fragment
+        android:id="@+id/frgPracticasUno"
+        android:name="com.ipn.esiatecamachalco.ui.menu.FrgPracticasUno"
+        android:label="FrgPracticasUno"
+        tools:layout="@layout/layout_frg_practicas_uno"
+        >
+        <action
+            android:id="@+id/action_frgPracticasUno_to_frgPracticasDos"
+            app:destination="@id/frgPracticasDos"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/frgPracticasDos"
+        android:name="com.ipn.esiatecamachalco.ui.menu.FrgPracticasDos"
+        android:label="FrgPracticasDos"
+        tools:layout="@layout/layout_frg_practicas_dos"
+        >
+        <action
+            android:id="@+id/action_frgPracticasDos_to_frgPracticasTres"
+            app:destination="@id/frgPracticasTres"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/frgPracticasTres"
+        android:name="com.ipn.esiatecamachalco.ui.menu.FrgPracticasTres"
+        android:label="FrgPracticasTres"
+        tools:layout="@layout/layout_frg_practicas_tres"
+        />
+
+    <fragment
+        android:id="@+id/frgTitulacionUno"
+        android:name="com.ipn.esiatecamachalco.ui.menu.FrgTitulacionUno"
+        android:label="FrgTitulacionUno"
+        tools:layout="@layout/layout_frg_titulacion_uno"
+        >
+        <action
+            android:id="@+id/action_frgTitulacionUno_to_frgTitulacionDos"
+            app:destination="@id/frgTitulacionDos"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/frgTitulacionDos"
+        android:name="com.ipn.esiatecamachalco.ui.menu.FrgTitulacionDos"
+        android:label="FrgTitulacionDos"
+        tools:layout="@layout/layout_frg_titulacion_dos"
+        />
+
+    <fragment
+        android:id="@+id/frgApoyoEstudiantilDos"
+        android:name="com.ipn.esiatecamachalco.ui.menu.FrgApoyoEstudiantilDos"
+        android:label="FrgApoyoEstudiantilDos"
+        tools:layout="@layout/layout_frg_apoyo_dos"
+        />
+
+    <fragment
+        android:id="@+id/frgApoyoEstudiantilUno"
+        android:name="com.ipn.esiatecamachalco.ui.menu.FrgApoyoEstudiantilUno"
+        android:label="FrgApoyoEstudiantilUno"
+        tools:layout="@layout/layout_frg_apoyo_uno"
+        >
+        <action
+            android:id="@+id/action_frgApoyoEstudiantilUno_to_frgApoyoEstudiantilDos"
+            app:destination="@id/frgApoyoEstudiantilDos"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/frgAcademiasUno"
+        android:name="com.ipn.esiatecamachalco.ui.academias.FrgAcademiasUno"
+        android:label="FrgAcademiasUno"
+        tools:layout="@layout/layout_frg_academias_uno"
+        >
+        <action
+            android:id="@+id/action_frgAcademiasUno_to_frgAcademiasDos"
+            app:destination="@id/frgAcademiasDos" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/frgAcademiasDos"
+        android:name="com.ipn.esiatecamachalco.ui.academias.FrgAcademiasDos"
+        android:label="FrgAcademiasDos"
+        tools:layout="@layout/layout_frg_academias_dos"
+        />
+
+    <action
+        android:id="@+id/action_academias"
+        app:destination="@id/frgAcademiasUno"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@animator/nav_default_pop_exit_anim"
+        app:popUpToInclusive="true"
+        app:launchSingleTop="true"
+        />
+
+    <action
+        android:id="@+id/action_user_type"
+        app:destination="@id/frgUserType"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@animator/nav_default_pop_exit_anim"
+        app:popUpToInclusive="true"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/navigation_sesion"
+        />
+
+    <fragment
+        android:id="@+id/frgAlumnosUno"
+        android:name="com.ipn.esiatecamachalco.ui.posgrado.FrgAlumnosUno"
+        android:label="FrgAlumnosUno"
+        tools:layout="@layout/layout_frg_posgrado_alumnos_uno"
+        >
+        <action
+            android:id="@+id/action_frgAlumnosUno_to_frgAlumnosDos"
+            app:destination="@id/frgAlumnosDos" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/frgAlumnosDos"
+        android:name="com.ipn.esiatecamachalco.ui.posgrado.FrgAlumnosDos"
+        android:label="FrgAlumnosDos"
+        tools:layout="@layout/layout_frg_posgrado_alumno_dos"
+        />
+
+    <fragment
+        android:id="@+id/frgConocenosDos"
+        android:name="com.ipn.esiatecamachalco.ui.posgrado.FrgConocenosDos"
+        android:label="FrgConocenosDos"
+        tools:layout="@layout/layout_frg_posgrado_conocenos_dos"
+        />
+
+    <fragment
+        android:id="@+id/frgConocenosUno"
+        android:name="com.ipn.esiatecamachalco.ui.posgrado.FrgConocenosUno"
+        android:label="FrgConocenosUno"
+        tools:layout="@layout/layout_frg_posgrado_conocenos_uno"
+        >
+        <action
+            android:id="@+id/action_frgConocenosUno_to_frgConocenosDos"
+            app:destination="@id/frgConocenosDos" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/frgProfesores"
+        android:name="com.ipn.esiatecamachalco.ui.posgrado.FrgProfesores"
+        android:label="FrgProfesores"
+        tools:layout="@layout/layout_frg_posgrado_profesores"
+        />
+
+    <fragment
+        android:id="@+id/frgProgramasUno"
+        android:name="com.ipn.esiatecamachalco.ui.posgrado.FrgProgramasUno"
+        android:label="FrgProgramasUno"
+        tools:layout="@layout/layout_frg_posgrado_programas_uno"
+        >
+        <action
+            android:id="@+id/action_frgProgramasUno_to_frgProgramasDos"
+            app:destination="@id/frgProgramasDos" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/frgProgramasDos"
+        android:name="com.ipn.esiatecamachalco.ui.posgrado.FrgProgramasDos"
+        android:label="FrgProgramasDos"
+        tools:layout="@layout/layout_frg_posgrado_programas_dos"
+        />
+
+    <fragment
+        android:id="@+id/frgPosgradoMenu"
+        android:name="com.ipn.esiatecamachalco.ui.menu.FrgPosgradoMenu"
+        android:label="FrgPosgradoMenu"
+        tools:layout="@layout/layout_frg_menu_posgrado"
+        >
+        <action
+            android:id="@+id/action_frgPosgradoMenu_to_frgProfesores"
+            app:destination="@id/frgProfesores" />
+        <action
+            android:id="@+id/action_frgPosgradoMenu_to_frgConocenosUno"
+            app:destination="@id/frgConocenosUno" />
+        <action
+            android:id="@+id/action_frgPosgradoMenu_to_frgAlumnosUno"
+            app:destination="@id/frgAlumnosUno" />
+        <action
+            android:id="@+id/action_frgPosgradoMenu_to_frgProgramasUno"
+            app:destination="@id/frgProgramasUno" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/frgUserType"
+        android:name="com.ipn.esiatecamachalco.ui.menu.FrgUserType"
+        android:label="FrgUserType"
+        tools:layout="@layout/layout_frg_user_type"
+        >
+        <action
+            android:id="@+id/action_frgUserType_to_navigation_menu"
+            app:destination="@id/navigation_menu" />
+        <action
+            android:id="@+id/action_frgUserType_to_frgPosgradoMenu"
+            app:destination="@id/frgPosgradoMenu" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/frgRegistro"
+        android:name="com.ipn.esiatecamachalco.ui.sesion.FrgRegistro"
+        android:label="FrgRegistro"
+        tools:layout="@layout/layout_frg_registro"
+        />
+
+
+</navigation>

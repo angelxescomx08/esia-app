@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:background="@color/colorFondo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Pagina 1 -->
+
+        <TextView
+            android:id="@+id/labelFormacionBasica"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Experiencia Profesional"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:padding="8dp"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            />
+
+        <TextView
+            android:id="@+id/labelInfoFormacionBasica"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="El pasante deberá tener 3 años de haber concluido el 100% de créditos, consiste en la elaboración de un informe escrito de las actividades profesionales del pasante durante un período no menor a tres años donde aplique los conocimientos de Ingeniería y Arquitectura. El informe escrito de la experiencia profesional se realiza sobre un tema en particular aprobado previamente por la Subdirección Académica, y se hace exposición oral del mismo ante un jurado. El pasante hará una exposición oral del trabajo escrito ante el jurado correspondiente."
+            android:padding="10dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelFormacionBasica"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/txtVerMasExperienciaProf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="ver más"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:paddingVertical="10dp"
+            app:drawableEndCompat="@drawable/ic_double_arrow_right"
+            style="@style/ClickableView"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelInfoFormacionBasica"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.97"
+            />
+
+
+        <TextView
+            android:id="@+id/labelServiciosEstudiantiles"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Seminarios"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:padding="8dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/txtVerMasExperienciaProf"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            />
+
+        <TextView
+            android:id="@+id/labelInfoServiciosEstudiantiles"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Acreditación de un seminario de titulación avalado por la Dirección de Educación Superior del Instituto Politécnico Nacional, con una duración mínima de 150 horas. Se acredita con calificación no menor a 8.0 (ocho), y deberá cubrir el 90% de asistencia como mínimo. Se entrega trabajo escrito y exposición ante un jurado."
+            android:padding="10dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelServiciosEstudiantiles"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/txtVerMasSeminarios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="ver más"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:paddingVertical="10dp"
+            app:drawableEndCompat="@drawable/ic_double_arrow_right"
+            style="@style/ClickableView"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelInfoServiciosEstudiantiles"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.97"
+            />
+
+
+        <TextView
+            android:id="@+id/labelFormacionIntegralInstitucional"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="SElect"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:padding="8dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/txtVerMasSeminarios"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            />
+
+        <TextView
+            android:id="@+id/labelInfoFormacionIntegralInstitucional"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="SElect tiene la finalidad de facilitarte el proceso de validación y acreditación de la Unidad de Aprendizaje Electiva de tu Programa Académico. Con la acreditación de la Unidad de Aprendizaje Electiva se pretende que desarrolles competencias profesionales complementarias para la construcción de conocimientos y experiencias de aprendizaje, privilegiando la participación en proyectos de investigación, vinculación y extensión, que te permitan prepararte para tu egreso e inserción en el campo laboral."
+            android:padding="10dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelFormacionIntegralInstitucional"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/txtVerMasSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="ver más"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:paddingVertical="10dp"
+            app:drawableEndCompat="@drawable/ic_double_arrow_right"
+            style="@style/ClickableView"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelInfoFormacionIntegralInstitucional"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.97"
+            />
+
+        <TextView
+            android:id="@+id/labelTitulo7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="Encargado responsable"
+            android:gravity="center"
+            android:padding="12dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/txtVerMasSelect"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.01"
+            />
+
+        <TextView
+            android:id="@+id/labelTitulo8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:text="Encargado: Eloy Rico\nContacto: 57296000 Ext. 68053\nDías de atención: Lunes a Jueves\nHorario de atención: 9:00 a 13:00"
+            android:gravity="start"
+            android:paddingHorizontal="12dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelTitulo7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

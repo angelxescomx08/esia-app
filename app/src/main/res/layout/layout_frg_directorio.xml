@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.directorio.FrgDirectorio">
+
+    <!--ImageView
+        android:id="@+id/imgBuscar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        app:layout_constraintTop_toTopOf="@+id/inputBuscar"
+        app:layout_constraintBottom_toBottomOf="@+id/inputBuscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_manage_search"
+        app:tint="@color/blackToWhite"
+        /-->
+
+    <TextView
+        android:id="@+id/labelTitulo1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:text="Directorio"
+        android:gravity="center"
+        android:padding="12dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.03"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputBuscar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/labelTitulo1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        android:hint="@string/buscar"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:text="Hola mundo!"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/inputBuscar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="10dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="vertical"
+            tools:listitem="@layout/item_directorio"
+            />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <ImageView
+        android:id="@+id/imgNoData"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_search"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/swipeRefresh"
+        app:layout_constraintVertical_bias="0.2"
+        app:tint="@color/blackToWhite"
+        tools:visibility="gone"
+        android:contentDescription="@null"
+        />
+
+    <TextView
+        android:id="@+id/txtNoData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgNoData"
+        android:text="@string/no_hay_informaci_n_para_mostrar"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/blackToWhite"
+        android:padding="15sp"
+        tools:visibility="gone"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

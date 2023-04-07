@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingVertical="15dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        >
+
+        <ImageView
+            android:id="@+id/imgNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_person_circle"
+            app:tint="@color/blackToWhite"
+            android:padding="5dp"
+            android:contentDescription="@null"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/labelNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:text="@string/nombre"
+            app:layout_constraintTop_toTopOf="@+id/imgNombre"
+            app:layout_constraintStart_toEndOf="@+id/imgNombre"
+            app:layout_constraintBottom_toBottomOf="@+id/imgNombre"
+            />
+
+        <TextView
+            android:id="@+id/txtNombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/imgNombre"
+            app:layout_constraintStart_toEndOf="@+id/labelExtension"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center"
+            android:paddingHorizontal="15dp"
+            tools:text="Nombre de un encargado"
+            />
+
+        <ImageView
+            android:id="@+id/imgCorreo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_email_read"
+            app:tint="@color/blackToWhite"
+            android:padding="5dp"
+            android:contentDescription="@null"
+            app:layout_constraintTop_toBottomOf="@+id/txtNombre"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/labelCorreo"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:text="@string/correo"
+            app:layout_constraintTop_toTopOf="@+id/imgCorreo"
+            app:layout_constraintStart_toEndOf="@+id/imgCorreo"
+            app:layout_constraintBottom_toBottomOf="@+id/imgCorreo"
+            />
+
+        <TextView
+            android:id="@+id/txtCorreo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/imgCorreo"
+            app:layout_constraintStart_toEndOf="@+id/labelExtension"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center"
+            android:paddingHorizontal="15dp"
+            tools:text="Nombre de un encargado"
+            />
+
+        <ImageView
+            android:id="@+id/imgCargo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cargo"
+            app:tint="@color/blackToWhite"
+            android:padding="5dp"
+            android:contentDescription="@null"
+            app:layout_constraintTop_toBottomOf="@+id/txtCorreo"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/labelCargo"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:text="@string/cargo"
+            app:layout_constraintTop_toTopOf="@+id/imgCargo"
+            app:layout_constraintStart_toEndOf="@+id/imgCargo"
+            app:layout_constraintBottom_toBottomOf="@+id/imgCargo"
+            />
+
+        <TextView
+            android:id="@+id/txtCargo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/imgCargo"
+            app:layout_constraintStart_toEndOf="@+id/labelExtension"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center"
+            android:paddingHorizontal="15dp"
+            tools:text="Nombre de un encargado"
+            />
+
+        <ImageView
+            android:id="@+id/imgExtension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_extension"
+            app:tint="@color/blackToWhite"
+            android:padding="5dp"
+            android:contentDescription="@null"
+            app:layout_constraintTop_toBottomOf="@+id/txtCargo"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/labelExtension"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:text="@string/ext"
+            app:layout_constraintTop_toTopOf="@+id/imgExtension"
+            app:layout_constraintStart_toEndOf="@+id/imgExtension"
+            app:layout_constraintBottom_toBottomOf="@+id/imgExtension"
+            />
+
+        <TextView
+            android:id="@+id/txtExtension"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/imgExtension"
+            app:layout_constraintStart_toEndOf="@+id/labelExtension"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center"
+            android:paddingHorizontal="15dp"
+            tools:text="Nombre de un encargado"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:background="@color/colorFondo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/labelEsucela"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Escuela Superior de Ingeniería y Arquitectura"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorText"
+            android:textSize="17sp"
+
+            android:layout_marginTop="20dp"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/labelUnidad"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Unidad Tecamachalco"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorText"
+            android:textSize="20sp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelEsucela"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/imgEsia"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+
+            android:src="@drawable/esia"
+            android:contentDescription="@null"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelUnidad"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.03"
+            />
+
+        <TextView
+            android:id="@+id/labelTitulo"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Formatos"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorText"
+            android:textSize="22sp"
+
+            app:layout_constraintTop_toBottomOf="@+id/imgEsia"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerFormatos"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:paddingVertical="10dp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelTitulo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:listitem="@layout/item_formatos"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

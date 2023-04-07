@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "72425895277",
+    "project_id": "esia-tecamachalco-ss",
+    "storage_bucket": "esia-tecamachalco-ss.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72425895277:android:da5453815eed63e5bed664",
+        "android_client_info": {
+          "package_name": "com.ipn.esiatecamachalco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "72425895277-2k7jcodd5pfrtt1ana34p5sh64bd9ou6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcyz77-gcGKBUHrDJCgSc7EAQF2bLc3Qs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "72425895277-2k7jcodd5pfrtt1ana34p5sh64bd9ou6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

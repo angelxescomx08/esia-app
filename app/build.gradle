@@ -1,0 +1,97 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+    id 'androidx.navigation.safeargs'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+
+    compileSdkVersion 33
+
+    defaultConfig {
+        applicationId "com.ipn.esiatecamachalco"
+        minSdk 21
+        targetSdk 33
+        versionCode 4
+        versionName "4.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
+
+    namespace 'com.ipn.esiatecamachalco'
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.6.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    // Firebase
+    implementation platform('com.google.firebase:firebase-bom:30.4.1')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-auth-ktx'
+
+    // Navigation library
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-dynamic-features-fragment:$nav_version" // Feature module Support
+    androidTestImplementation "androidx.navigation:navigation-testing:$nav_version"// Testing Navigation
+
+    // Diseño
+    implementation 'com.google.android.material:material:1.7.0'
+
+    // View elements
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.2.0'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+    // ImageView optimization
+    kapt 'com.github.bumptech.glide:compiler:4.14.2'
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    implementation ('com.github.bumptech.glide:recyclerview-integration:4.14.2') {
+        // Excludes the support library because it's already included by Glide.
+        transitive = false
+    }
+
+    // Lifecycle components
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"          // ViewModel
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"            // Lifecycles only (without ViewModel or LiveData)
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version"      // ViewModel utilities for Compose
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version"   // Saved state module for ViewModel
+    implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"           // alternately - if using Java8, use the following instead of lifecycle-compiler
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"           // LiveData
+    implementation "androidx.lifecycle:lifecycle-service:$lifecycle_version"                // optional - helpers for implementing LifecycleOwner in a Service
+    implementation "androidx.lifecycle:lifecycle-process:$lifecycle_version"                // optional - ProcessLifecycleOwner provides a lifecycle for the whole application process
+    implementation "androidx.lifecycle:lifecycle-reactivestreams-ktx:$lifecycle_version"    // optional - ReactiveStreams support for LiveData
+    testImplementation "androidx.arch.core:core-testing:2.1.0"                              // optional - Test helpers for LiveData
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+
+    // ROOM
+    implementation "androidx.room:room-runtime:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+    implementation "androidx.room:room-paging:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+
+    // Paging Data 3
+    implementation "androidx.paging:paging-runtime-ktx:$paging_version"
+}

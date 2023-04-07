@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:background="@color/colorFondo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Pagina 1 -->
+
+        <TextView
+            android:id="@+id/labelFormacionBasica"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Escolaridad"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:padding="8dp"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            />
+
+        <TextView
+            android:id="@+id/labelInfoFormacionBasica"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Aplicable cuando el pasante de la licenciatura obtiene un promedio general no menor a 9.0 (nueve) debe haber cubierto todos los créditos y no haber reprobado ninguna Unidad de Aprendizaje en todo el transcurso de su carrera."
+            android:padding="10dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelFormacionBasica"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/txtVerMasEscolaridad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="ver más"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:paddingVertical="10dp"
+            app:drawableEndCompat="@drawable/ic_double_arrow_right"
+            style="@style/ClickableView"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelInfoFormacionBasica"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.97"
+            />
+
+
+        <TextView
+            android:id="@+id/labelServiciosEstudiantiles"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Curricular"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:padding="8dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/txtVerMasEscolaridad"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            />
+
+        <TextView
+            android:id="@+id/labelInfoServiciosEstudiantiles"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Consiste en la acreditación de cursos o de una serie de actividades equivalente a los mismos, diseñados expresamente para efectos de titulación. Los cursos o actividades equivalentes deberán estar incorporados al plan de estudios de la carrera que se trate, conforme a lo establecido por el Artículo 10 del Reglamento para la Aprobación de los Planes y Programas de Estudio del Instituto Politécnico Nacional."
+            android:padding="10dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelServiciosEstudiantiles"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/txtVerMasCurricular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="ver más"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:paddingVertical="10dp"
+            app:drawableEndCompat="@drawable/ic_double_arrow_right"
+            style="@style/ClickableView"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelInfoServiciosEstudiantiles"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.97"
+            />
+
+
+        <TextView
+            android:id="@+id/labelFormacionIntegralInstitucional"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Créditos de Posgrado"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:padding="8dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/txtVerMasCurricular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            />
+
+        <TextView
+            android:id="@+id/labelInfoFormacionIntegralInstitucional"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Consiste en la obtención de créditos por cursos requeridos para cubrir un programa de posgrado con un (75%) de los créditos por cursos requeridos para cubrir un programa de posgrado equivalente a uno de maestría y titularse de manera directa. Ambos porcentajes de avance deberán ser reconocidos por la Dirección de Estudios de Posgrado e Investigación de la Unidad Académica."
+            android:padding="10dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelFormacionIntegralInstitucional"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/txtVerMasCreditoPosgrado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="ver más"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:paddingVertical="10dp"
+            app:drawableEndCompat="@drawable/ic_double_arrow_right"
+            style="@style/ClickableView"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelInfoFormacionIntegralInstitucional"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.97"
+            />
+
+
+        <TextView
+            android:id="@+id/labelExtensionApoyosEducativos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Tesis"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:padding="8dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/txtVerMasCreditoPosgrado"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            />
+
+        <TextView
+            android:id="@+id/labelInfoExtensionApoyosEducativos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="La tesis consiste en un trabajo escrito cuyo objetivo puede ser la investigación o la aportación de nuevos enfoques sobre un tema determinado del área de estudio del pasante. En esta opción, el pasante hará una exposición oral resumida del trabajo escrito ante un jurado. El tema de tesis podrá ser propuesto por el pasante o asignado por la Subdirección Académica de la escuela. Se preenta de forma individual, colectiva, colectiva interdisciplinaria o multidiciplinaria."
+            android:padding="10dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelExtensionApoyosEducativos"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/txtVerMasTesis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="ver más"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:paddingVertical="10dp"
+            app:drawableEndCompat="@drawable/ic_double_arrow_right"
+            style="@style/ClickableView"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelInfoExtensionApoyosEducativos"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.97"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="@color/colorPrimary"
+            android:src="@drawable/ic_arrow_back"
+            android:rotation="180"
+            android:contentDescription="@null"
+            android:layout_marginVertical="30dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/txtVerMasTesis"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.98"
+            app:layout_constraintHorizontal_bias="0.97"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

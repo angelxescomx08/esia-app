@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.ipn.esiatecamachalco.ViewModelMain" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/nav_host_fragment_activity_main"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:defaultNavHost="true"
+            app:layout_constraintBottom_toTopOf="@id/containerModules"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navGraph="@navigation/mobile_navigation" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/containerModules"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/colorPrimary"
+            >
+
+            <ImageView
+                android:id="@+id/imgFormatos"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toTopOf="@+id/imgSalir"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imgAcademias"
+                android:src="@drawable/ayuda"
+                style="@style/ClickableView"
+                android:contentDescription="@null"
+                />
+
+            <ImageView
+                android:id="@+id/imgAcademias"
+                style="@style/ClickableView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@null"
+                android:padding="4dp"
+                android:src="@drawable/keso2"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imgAyuda"
+                app:layout_constraintStart_toEndOf="@+id/imgFormatos"
+                app:layout_constraintTop_toTopOf="@+id/imgFormatos"
+                app:layout_constraintVertical_bias="1.0"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imgAyuda"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="3dp"
+                app:layout_constraintTop_toTopOf="@+id/imgSalir"
+                app:layout_constraintStart_toEndOf="@+id/imgAcademias"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imgDirectorio"
+                android:src="@drawable/keso"
+                style="@style/ClickableView"
+                android:contentDescription="@null"
+                />
+
+            <ImageView
+                android:id="@+id/imgDirectorio"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="2dp"
+                app:layout_constraintTop_toTopOf="@+id/imgFormatos"
+                app:layout_constraintStart_toEndOf="@+id/imgAyuda"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imgRutas"
+                android:src="@drawable/keso4"
+                style="@style/ClickableView"
+                android:contentDescription="@null"
+                />
+
+            <ImageView
+                android:id="@+id/imgRutas"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="5dp"
+                app:layout_constraintTop_toTopOf="@+id/imgFormatos"
+                app:layout_constraintStart_toEndOf="@+id/imgDirectorio"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imgMenu"
+                android:src="@drawable/ubicacion"
+                style="@style/ClickableView"
+                android:contentDescription="@null"
+                />
+
+            <ImageView
+                android:id="@+id/imgMenu"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toTopOf="@+id/imgFormatos"
+                app:layout_constraintStart_toEndOf="@+id/imgRutas"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imgSalir"
+                android:src="@drawable/menu"
+                style="@style/ClickableView"
+                android:contentDescription="@null"
+                />
+
+            <ImageView
+                android:id="@+id/imgSalir"
+                android:layout_width="0dp"
+                android:padding="6dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/imgMenu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/logout"
+                style="@style/ClickableView"
+                android:contentDescription="@null"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:backgroundTint="@color/transparente"
+            android:textSize="50sp"
+            android:translationZ="6dp"
+            android:indeterminateTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:viewVisibility="@{viewmodel.isProgressVisible()}"
+            tools:visibility="gone"
+            />
+
+        <View
+            android:id="@+id/viewLockScreen"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:translationZ="5dp"
+            android:focusable="true"
+            android:clickable="true"
+            style="@style/ClickableView"
+            android:background="@color/blackBackGround"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:viewVisibility="@{viewmodel.isProgressVisible()}"
+            tools:visibility="gone"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

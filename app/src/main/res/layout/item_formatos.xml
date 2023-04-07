@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="15dp"
+    app:cardUseCompatPadding="true"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        >
+
+        <TextView
+            android:id="@+id/txtFormato"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            tools:text="Formatos de prácticas profesionales"
+            android:textColor="@color/colorText"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imgDrive"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/imgDrive"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:src="@drawable/drive"
+            android:padding="11dp"
+            android:contentDescription="@null"
+            style="@style/ClickableView"
+            app:layout_constraintTop_toTopOf="@+id/imgCopy"
+            app:layout_constraintBottom_toBottomOf="@+id/imgCopy"
+            app:layout_constraintStart_toEndOf="@+id/txtFormato"
+            app:layout_constraintEnd_toStartOf="@+id/imgCopy"
+            />
+
+        <ImageView
+            android:id="@+id/imgCopy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_copy"
+            android:padding="15dp"
+            android:contentDescription="@null"
+            style="@style/ClickableView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgDrive"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

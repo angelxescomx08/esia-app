@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:background="@color/colorFondo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgEsia"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+
+            android:src="@drawable/esia"
+            android:contentDescription="@null"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.03"
+            app:layout_constraintHorizontal_bias="0.95"
+            />
+
+        <TextView
+            android:id="@+id/labelEsucela"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:gravity="bottom|end"
+            android:text="Escuela Superior\nde Ingeniería y Arquitectura"
+            android:textColor="@color/colorText"
+            android:textSize="12sp"
+
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toTopOf="@+id/labelUnidad"
+            app:layout_constraintEnd_toStartOf="@+id/imgEsia"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imgEsia" />
+
+        <TextView
+            android:id="@+id/labelUnidad"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Unidad Tecamachalco"
+            android:gravity="bottom|end"
+            android:textStyle="bold"
+            android:textColor="@color/colorText"
+            android:textSize="18sp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelEsucela"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/labelEsucela"
+            app:layout_constraintBottom_toBottomOf="@+id/imgEsia"
+            />
+
+        <TextView
+            android:id="@+id/txtSAES"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:text="SAES"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/shape_menu"
+            android:padding="15dp"
+            android:layout_marginHorizontal="15dp"
+            style="@style/ClickableView"
+
+            app:layout_constraintTop_toBottomOf="@+id/imgEsia"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txtBecas"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.1"
+            />
+
+        <TextView
+            android:id="@+id/txtBecas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:text="Becas"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/shape_menu"
+            android:gravity="center"
+            android:padding="15dp"
+            android:layout_marginHorizontal="15dp"
+            style="@style/ClickableView"
+
+            app:layout_constraintTop_toTopOf="@+id/txtSAES"
+            app:layout_constraintStart_toEndOf="@+id/txtSAES"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/txtTramites"
+            style="@style/ClickableView"
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_menu"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Trámites Escolares"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+
+            app:layout_constraintEnd_toStartOf="@+id/txtBecas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtBecas" />
+
+        <TextView
+            android:id="@+id/txtServicioSocial"
+            style="@style/ClickableView"
+            android:layout_width="0dp"
+
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="15dp"
+            android:background="@drawable/shape_menu"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Servicio Social"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toBottomOf="@+id/txtTramites"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txtTramites"
+            app:layout_constraintTop_toTopOf="@+id/txtTramites" />
+
+        <TextView
+            android:id="@+id/txtPracticas"
+            style="@style/ClickableView"
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_menu"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Prácticas\nProfesionales"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+
+            app:layout_constraintEnd_toStartOf="@+id/txtBecas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTramites" />
+
+        <TextView
+            android:id="@+id/txtTitulacion"
+            style="@style/ClickableView"
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:background="@drawable/shape_menu"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Opciones de Titulación"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txtPracticas"
+            app:layout_constraintTop_toTopOf="@+id/txtPracticas" />
+
+        <TextView
+            android:id="@+id/txtApoyo"
+            style="@style/ClickableView"
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_menu"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Apoyo Estudiantil"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+
+            app:layout_constraintEnd_toStartOf="@+id/txtBecas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPracticas" />
+
+        <TextView
+            android:id="@+id/txtPosgrado"
+            style="@style/ClickableView"
+            android:layout_width="0dp"
+
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="15dp"
+            android:background="@drawable/shape_menu"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Posgrado"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toBottomOf="@+id/txtApoyo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txtApoyo"
+            app:layout_constraintTop_toTopOf="@+id/txtApoyo" />
+
+        <TextView
+            android:id="@+id/txtPlanos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/shape_menu"
+            android:text="Planos oficiales"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            style="@style/ClickableView"
+
+            app:layout_constraintTop_toBottomOf="@+id/txtApoyo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

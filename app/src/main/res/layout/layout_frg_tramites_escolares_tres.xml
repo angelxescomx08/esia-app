@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:background="@color/colorFondo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Pagina 3 -->
+
+        <TextView
+            android:id="@+id/labelPracticas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Prácticas Escolares"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:padding="8dp"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            />
+
+        <TextView
+            android:id="@+id/labelVisitas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Visitas Escolares"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:padding="8dp"
+            android:layout_marginTop="5dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelPracticas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            />
+
+        <TextView
+            android:id="@+id/labelBrigadas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Brigadas de Servicio Social"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:padding="8dp"
+            android:layout_marginTop="5dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelVisitas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            />
+
+        <TextView
+            android:id="@+id/labelInfoBrigadas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Atención:\nC. Guadalupe Lara\nHorario: 9:00 a 14:00 hrs\nDías de atención: Lunes a Jueves\nNota. Acudir al departamento para más información."
+            android:padding="10dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelBrigadas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

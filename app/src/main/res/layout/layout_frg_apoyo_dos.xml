@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:background="@color/colorFondo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Pagina 1 -->
+
+        <TextView
+            android:id="@+id/labelFormacionBasica"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Prestamo de equipo por la UDI"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:padding="8dp"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            />
+
+        <TextView
+            android:id="@+id/labelInfoFormacionBasica"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Requisitos:\n*2 fotografías infantiles de estudio, blanco y negro o color.\n*Copia de comprobante de reinscrepción del semestre en curso\n*Deposito de $27.00 en la cuenta de BBVA No. 0135892384\nHorario: 8:00 a 13:00 y 16:00 a 20:00 hrs\nDías de atención: Lunes a Viernes\nLa solicitud se realiza en la jefatura de la UDI."
+            android:padding="10dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelFormacionBasica"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
