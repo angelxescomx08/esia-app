@@ -91,20 +91,19 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
 
-            android:text="Trámites escolares"
             android:background="@color/colorPrimary"
-            android:textColor="@color/white"
             android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="15sp"
             android:padding="8dp"
+            android:text="TRÁMITES ESCOLARES "
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
 
-            app:layout_constraintTop_toBottomOf="@+id/labelTitulo1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelTitulo1"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/txtVerMasEscolaridad"
@@ -131,20 +130,19 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
 
-            android:text="Aspirantes"
             android:background="@color/colorPrimary"
-            android:textColor="@color/white"
             android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="15sp"
             android:padding="8dp"
+            android:text="ASPIRANTES"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
 
-            app:layout_constraintTop_toBottomOf="@+id/txtVerMasEscolaridad"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtVerMasEscolaridad"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/txtVerMasCurricular"
@@ -171,20 +169,19 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
 
-            android:text="Reinscripciones"
             android:background="@color/colorPrimary"
-            android:textColor="@color/white"
             android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="15sp"
             android:padding="8dp"
+            android:text="REINSCRIPCIONES"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
 
-            app:layout_constraintTop_toBottomOf="@+id/txtVerMasCurricular"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtVerMasCurricular"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/txtVerMasCreditoPosgrado"
@@ -211,20 +208,19 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
 
-            android:text="Alumnos de Nuevo Ingreso"
             android:background="@color/colorPrimary"
-            android:textColor="@color/white"
             android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="15sp"
             android:padding="8dp"
+            android:text="ALUMNOS DE NUEVO INGRESO"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
 
-            app:layout_constraintTop_toBottomOf="@+id/txtVerMasCreditoPosgrado"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtVerMasCreditoPosgrado"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/txtVerMasTesis"
@@ -246,31 +242,24 @@
             />
 
 
-
-
-
-
-
-
         <TextView
             android:id="@+id/labelFormacionBasicaDos"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
 
-            android:text="Requisitos de Examen de Posgrado"
             android:background="@color/colorPrimary"
-            android:textColor="@color/white"
             android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="15sp"
             android:padding="8dp"
+            android:text="REQUISITOS DE EXAMEN DE GRADO DE POSGRADO"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
 
-            app:layout_constraintTop_toBottomOf="@+id/txtVerMasTesis"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtVerMasTesis"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/txtVerMasEscolaridadDos"
@@ -297,20 +286,19 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
 
-            android:text="Reglamento de Posgrado"
             android:background="@color/colorPrimary"
-            android:textColor="@color/white"
             android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="15sp"
             android:padding="8dp"
+            android:text="REGLAMENTO POSGRADO"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
 
-            app:layout_constraintTop_toBottomOf="@+id/txtVerMasEscolaridadDos"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtVerMasEscolaridadDos"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/txtVerMasCurricularDos"
@@ -337,20 +325,19 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
 
-            android:text="Retribución Social"
             android:background="@color/colorPrimary"
-            android:textColor="@color/white"
             android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="15sp"
             android:padding="8dp"
+            android:text="RETRIBUCION SOCIAL"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
 
-            app:layout_constraintTop_toBottomOf="@+id/txtVerMasCurricularDos"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtVerMasCurricularDos"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/txtVerMasCreditoPosgradoDos"
@@ -377,20 +364,19 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
 
-            android:text="Alumnos de nuevo ingreso"
             android:background="@color/colorPrimary"
-            android:textColor="@color/white"
             android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="15sp"
             android:padding="8dp"
+            android:text="ALUMNOS DE NUEVO INGRESO"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
 
-            app:layout_constraintTop_toBottomOf="@+id/txtVerMasCreditoPosgradoDos"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtVerMasCreditoPosgradoDos"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/txtVerMasTesisDos"
@@ -417,20 +403,19 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
 
-            android:text="Becas"
             android:background="@color/colorPrimary"
-            android:textColor="@color/white"
             android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="15sp"
             android:padding="8dp"
+            android:text="BECAS"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
 
-            app:layout_constraintTop_toBottomOf="@+id/txtVerMasTesisDos"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtVerMasTesisDos"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/txtVerMasBecas"

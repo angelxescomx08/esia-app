@@ -91,20 +91,19 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
 
-            android:text="Encargada de Gestión Escolar"
             android:background="@color/colorPrimary"
-            android:textColor="@color/white"
             android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="15sp"
             android:padding="8dp"
+            android:text="Encargada de gestion escolar"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
 
-            app:layout_constraintTop_toBottomOf="@+id/labelTitulo1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelTitulo1"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/labelTituloNegritas1"
@@ -139,21 +138,20 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
 
-            android:text="Encargado de Bilioteca T.M."
-            android:background="@color/colorPrimary"
-            android:textColor="@color/white"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="15sp"
-            android:padding="8dp"
             android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Encargado de biblioteca T. M."
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
 
-            app:layout_constraintTop_toBottomOf="@+id/labelInfoFormacionBasica"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelInfoFormacionBasica"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/labelTituloNegritas2"
@@ -189,21 +187,20 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
 
-            android:text="Encargado de Bilioteca T.V."
-            android:background="@color/colorPrimary"
-            android:textColor="@color/white"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="15sp"
-            android:padding="8dp"
             android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Encargado de Biblioteca T. V. "
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
 
-            app:layout_constraintTop_toBottomOf="@+id/labelInfoServiciosEstudiantiles"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelInfoServiciosEstudiantiles"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/labelTituloNegritas3"
