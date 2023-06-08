@@ -21,6 +21,8 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.launch
 
+//import android.view.View
+
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
@@ -68,7 +70,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.imgSalir.setOnClickListener {
-            val user = Firebase.auth.currentUser
+            /*val user = Firebase.auth.currentUser
             if (user == null){
                 viewModel.currentUserType = ViewModelMain.UserType.None
                 viewController.navigate(R.id.action_sesion)
@@ -86,7 +88,7 @@ class MainActivity : AppCompatActivity() {
                     }
                     show(TypeAlert.Question)
                 }
-            }
+            }*/
         }
 
         // This callback will only be called when MyFragment is at least Started.
@@ -100,7 +102,11 @@ class MainActivity : AppCompatActivity() {
 
     public override fun onStart() {
         super.onStart()
-        checkSession()
+        //checkSession()
+        //binding.imgSalir.visibility = View.INVISIBLE
+        binding.imgMenu.post {
+            binding.imgMenu.performClick()
+        }
     }
 
     private fun checkSession() = scope.launch(Dispatchers.Main) {
